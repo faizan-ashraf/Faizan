@@ -85,8 +85,38 @@ document.addEventListener("DOMContentLoaded", function(){
 
       // If all validations are successful, submit the form
       if (isNameValid && isEmailOrPhoneValid && isAgeValid && isPasswordValid) {
-          alert('Form submitted successfully!');
-          location.reload(true);
+          
+          const firstNameInput = document.querySelector('.FirstName');
+          const SurnameInput = document.querySelector('.Surname');
+          const SurnameValue = SurnameInput.value.trim();
+          const firstNameValue = firstNameInput.value.trim();
+          const reEmailInput = document.querySelector('.ReEmail');
+          const reEmailValue = reEmailInput.value.trim();
+          const daySelect = document.querySelector('.day');
+          const monthSelect = document.querySelector('.month');
+          const yearSelect = document.querySelector('.year');
+          const selectedDay = parseInt(daySelect.value, 10);
+          const selectedMonth = parseInt(monthSelect.value, 10);
+          const selectedYear = parseInt(yearSelect.value, 10);
+          const passwordInput = document.querySelector('.Password');
+          const passwordValue = passwordInput.value.trim();
+          const Male = document.getElementById('Male');
+          const Female = document.getElementById('Female');
+          const Custom = document.getElementById('Custom');
+          function genderselection(){
+            if(Male.checked){
+                return 'Male';
+            }else if(Female.checked){
+                return 'Female';
+            }else if(Custom.checked){
+                return 'Custom';
+            }
+          }
+
+          alert('\t\tForm Submitted Successfully.\n'+"\n\t\tYour Entered Information is: \nName: " + firstNameValue + '\nSurname: '+ SurnameValue+ '\nEmail or Mobile Number: '+ reEmailValue + '\nPassword: '+ passwordValue + '\nDate of Birth: '+ selectedDay + '-' + selectedMonth + '-'+ selectedYear+ '\nGender: '+ genderselection());
+
+
+          
           // You can add code to submit the form to your server here.
       }
   }
