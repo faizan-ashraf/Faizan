@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook</title>
+    <link rel="stylesheet" href="create.css">
+    <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAI0AAACNCAMAAAC9gAmXAAAAh1BMVEX///8Zd/MNdPP5/f3///1bk/Bbk+78//wKc/Rmmetsmu4advRVjuxCgu/y9/sAcPIAZenY6PZtnuMAY+qhv+wScugAaut4qOxMieYAbPQ9hemuzO+50+/i8foAcPZelexakOFynuqMseuave8rfvCsy/UpeeXI3PNtpfCCqug3fODP4PF8oup2ADNeAAAD90lEQVR4nO2bi3aiMBCGI0SIxUK5qHgpttbW7dr3f75NECmgpBNMYs+e+duDl5D4MQm5MUMICoVCoVAoFOp/EL29hNuL6JR3S4FU8NDud/UrrT7Riyu/SKTV4SYantn1XU3yL6lhFJVRaZwl27EubZMsrsykCCWM6q9XacGYo02sSFdrX1yoGo3IEOcRG+lVMGIsj5Vh+N9mFmlmETjBKJptFBszp9/MndPVaIUpD/ONKk08c7RyNOXMYrWacnMD1VQryn0lmrVJGI6zhqPwiloxvQ2mrYBNwfcVPy1ONTffNsxolMJvc0qywhxLiVNk4KoiJNHd7XVxWAIdHChxt+Zu75OciQ+lof7YOI3ngmlc8zTjX0XjuTAY0RMjjW6aIHBYFBWVWOT096DGaZz5bPXyuti9ZUJvu8Xry74XxzANS/P3Y9i5Txa9Y69RGid6jctxh9YTfHFc9A4wxmh4bUQfm3ohUNPwd3exzXwbXh+Q70ETJWHPAukONCx3ac+S1jZNMHI+eqrpLraZS6a41m3DJpJ1rHXbRIdrKPR0w9umcT6uwpRdjn2a4u0KDT3tQvC+2C5NML9aUcQNw+fnMPzTO9k3Q7N/7ual5LCbzuZPQv0rDyM0Th52M4eJmNgIyTY4jNCwi4VI6BVnhsA2TXdZRMlLAdrzMUXTykiPKTCjEZqHNg3ZAXdabNiG0Ak0oxWaB+B2gp1WjDRIgzSqNK1uv0NDWzSyYVObbQKH1SouaArWUH8pmmj4kmU1/dZnh+azkTb1LNgmbU2waJumPb/421uMNpon6AMU+jwzbZsATkOOFtoNnOa9f3phn4ZKJjv2afyJ8TWDAk34aHyWrkIjuTHt0xyefhON7JGbfZovyfrBRl/cGhdcz067aQxHtDNOlXslp92u8NE8DbfNMWyoPdmijZRD/1MGjbYJHhv6aj6C4yb52tdJ+34WnTPR4Fusuw5/YOckyeMgrTTNQu89L0YapEEapEEapEEapEGa22gUvMiG04x9sPuhdCmkh4bbBurx7EN9IYfTTKD+fryqhJ8oxIl2KE0QJUAWsYDNltBLHGibZQb3WiVxCnMvHkyTxnD3YkpWsIYzlCbKlQJ01jBP8ME0cL90ITcHFTuMJmCKPvsEFs8wjEY1noHUsR4GaBz1WA8RB/NzyYo0paeHiINRi1gqnXniPHJ+6ATVbVPFCKnRlDtm7jpPl9LwqeKCJpLGTy3TfO0Tct078GemU2yZN/aq//Or+E687Nx2ht34fJ53PmlcfRx7kyRTbL4dHn4NsrA7329eJX8vO9f1lYPKujjyOMJukuzHvp1rb6CRt/92mvTXavdjFAqFQqFQKBSK6x+FKVWt8PoacgAAAABJRU5ErkJggg==">
+</head>
+<body>
+    <div class="newform">
+        <p>
+            <p> <span class="SignW"><strong>Sign Up</strong></span> <br> <span class="QuickW">It's Quick and easy</span></p>
+            <hr>
+        </p>
+
+        <form>
+            <div class="Name">
+                <input type="text" placeholder="First Name" class="FirstName" required> 
+                <input type="text" placeholder="Surname" class="Surname" required>
+            </div>
+                <input type="email or text" placeholder="Mobile number or email address" class="ReEmail" required>
+                <br>
+            <input type="password" placeholder="New Password" class="Password" required>
+            <div class="birthday">
+                <p class="BirthTag"><strong>Date of Birth</strong></p>
+                <div class="BirthSelection">
+                    <label for="day"></label>
+                    <select name="day" id="day" class="day">
+                        <script>
+                            const dayselect= document.getElementById("day");
+                            for(let day=1 ; day<=31 ; day++){
+                                const option = document.createElement("option")
+                                option.value=day;
+                                option.textContent=day;
+                                dayselect.appendChild(option);
+                            }
+                        </script>
+                    </select>
+                    <label for="month"></label>
+                    <select name="month" id="month" class="month">
+                        <script>
+                            const monthselect= document.getElementById("month");
+                            for(let month = 1; month<=12; month++){
+                                const option = document.createElement("option");
+                                option.value=month;
+                                option.textContent=month;
+                                monthselect.appendChild(option);
+                            }
+                        </script>
+                    </select>
+                    <label for="year"></label>
+                    <select name="year" id="year" class="year">
+                        <script>
+                            const yearSelect = document.getElementById("year");
+                            const currentYear = new Date().getFullYear();
+                    
+                            for (let year = 2023; year >= 1905 ; year--) {
+                                const option = document.createElement("option");
+                                option.value = year;
+                                option.textContent = year;
+                                yearSelect.appendChild(option);
+                            }
+                        </script>
+                    </select>
+                </div>
+
+    
+            </div>
+            <div class="gender">
+                <p class="Gender"><strong>Gender</strong></p>
+                <div class="FemaleBox">
+                    <label for="Female" class="Female">Female</label>
+                    <input type="radio" name="gender" id="Female">
+                </div>
+                <div class="MaleBox">
+                    <label for="Male" class="Male">Male</label>
+                    <input type="radio" name="gender" id="Male">
+                </div>
+                <div class="CustomBox">
+                    <label for="Custom" class="Custom">Custom</label>
+                    <input type="radio" name="gender" id="Custom">
+                </div>
+            </div>
+            <div class="para">
+                <p> 
+                <span class="No1P">
+                        People who use our service may have uploaded your contact information to Facebook. Learn more.
+                </span> <br>
+                <span class="No2P">
+                    By clicking Sign Up, you agree to our Terms, Privacy Policy and Cookies Policy. You may receive SMS notifications from us and can opt out at any time.
+                </span></p>
+            </div>
+            <button class="SignupButton"><strong>Sign up</strong></button>
+        </form>
+    </div>
+</body>
+</html>

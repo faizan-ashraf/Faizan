@@ -1,0 +1,816 @@
+*{
+    border: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+@media screen {
+    
+body{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.SignW{
+    font-size: 6vh;
+    margin-left: 2.5vh;
+}
+.QuickW{
+    font-size: 3vh;
+    margin-left: 2.5vh;
+    color: grey;
+    margin-bottom: 0;
+}
+.newform{
+    width: 70vh;
+    height: 95vh;
+    margin: 0px;
+    border-radius: 10px;
+    background-color: white;
+    padding-bottom: 30px;   
+    border: 1px solid grey;
+}
+hr{
+    border: 0.1px solid rgba(174, 174, 174, 0.265);;
+    width: 70vh;
+}
+.SignUpW{
+    margin: 0;
+}
+.Name{
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1vh;
+}
+.FirstName{
+    padding: 3px;
+    width: 31vh;
+    padding: 10px 10px;
+    border-radius: 5px;
+    padding-left: 10px;
+    margin-left: 2.5vh;
+    background-color: rgba(174, 174, 174, 0.121);
+    border: 1px solid rgba(174, 174, 174, 0.607);
+}
+.Surname{
+    padding: 10px 10px;
+    border-radius: 5px;
+    margin: 5px;
+    width: 31vh;
+    margin-left: 2vh;
+    background-color: rgba(174, 174, 174, 0.121);
+    border: 1px solid rgba(174, 174, 174, 0.607);
+}
+.ReEmail{
+    padding: 3px;
+    width: 65vh;
+    padding: 10px 10px;
+    border-radius: 5px;
+    padding-left: 10px;
+    margin-left: 2.5vh;
+    background-color: rgba(174, 174, 174, 0.121);
+    margin-bottom: 1vh;
+    border: 1px solid rgba(174, 174, 174, 0.607);
+}
+.Password{
+    padding: 3px;
+    width: 65vh;
+    padding: 10px 10px;
+    border-radius: 5px;
+    padding-left: 10px;
+    margin-left: 2.5vh;
+    margin-top: 1vh;
+    background-color: rgba(174, 174, 174, 0.121);
+    border: 1px solid rgba(174, 174, 174, 0.607);
+}
+.BirthTag{
+    font-size: 14px;
+    padding-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 2px;
+}
+.BirthSelection{
+    align-items: center;
+    justify-content: center;
+}
+.day{
+    padding: 3px;
+    width: 20vh;
+    padding: 10px 10px;
+    border-radius: 5px;
+    padding-left: 10px;
+    margin-left: 2.5vh;
+    background-color: rgba(174, 174, 174, 0.121);
+    border: 1px solid rgba(174, 174, 174, 0.607);
+}
+.month{
+    padding: 3px;
+    width: 20vh;
+    padding: 10px 10px;
+    border-radius: 5px;
+    padding-left: 10px;
+    margin-left: 1.8vh;
+    background-color: rgba(174, 174, 174, 0.121);
+    border: 1px solid rgba(174, 174, 174, 0.607);   
+}
+.year{
+    padding: 3px;
+    width: 20vh;
+    padding: 10px 10px;
+    border-radius: 5px;
+    padding-left: 10px;
+    margin-left: 1.8vh;
+    background-color: rgba(174, 174, 174, 0.121);
+    border: 1px solid rgba(174, 174, 174, 0.607);
+}
+.Gender{
+    font-size: 14px;
+    padding-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 2px;
+}
+.MaleBox{
+    border: 1px solid white;
+    padding: 10px;
+    display: inline-block;
+    margin-right: 1.5vh;
+    border-radius: 5px;
+    background-color: rgba(174, 174, 174, 0.121);
+    border: 1px solid rgba(174, 174, 174, 0.607);
+}
+.FemaleBox{
+    border: 1px solid white;
+    padding: 10px 10px;
+    display: inline-block;
+    margin-right: 1.5vh;
+    border-radius: 5px;
+    margin-left: 2.5vh;
+    background-color: rgba(174, 174, 174, 0.121);
+    border: 1px solid rgba(174, 174, 174, 0.607);
+}
+.CustomBox{
+    border: 1px solid white;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 5px;
+    background-color: rgba(174, 174, 174, 0.121);
+    border: 1px solid rgba(174, 174, 174, 0.607);
+}
+.Male{
+    padding-right: 6.5vh;
+}
+.Female{
+    padding-right: 3vh;
+}
+.Custom{
+    padding-right: 2.5vh;
+}
+.No1P{
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+    text-align: left;
+    justify-content: left;
+    margin-left: 2.5vh;
+    margin-right: 2.5vh;
+    color: grey;
+}
+.No2P{
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+    text-align: left;
+    justify-content: left;
+    margin-left: 2.5vh;
+    margin-right: 2.5vh;
+    margin-bottom: 0;
+    color: grey;
+}
+.SignupButton{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(17, 159, 4);
+    height: 6.5vh;
+    width: 32vh;
+    font-size: 18px;
+    font-weight: 30px;
+    color: white;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-left: 18vh;
+    margin-top: 5vh;
+}
+}
+@media screen and (max-width: 1210px){
+     
+body{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.SignW{
+    font-size: 6vh;
+    margin-left: 2.5vh;
+}
+.QuickW{
+    font-size: 3vh;
+    margin-left: 2.5vh;
+    color: grey;
+    margin-bottom: 0;
+}
+.newform{
+    width: 70vh;
+    height: 95vh;
+    margin: 0px;
+    border-radius: 10px;
+    background-color: white;
+    padding-bottom: 30px;   
+    border: 1px solid grey;
+}
+hr{
+    border: 0.1px solid rgba(174, 174, 174, 0.265);;
+    width: 70vh;
+}
+.SignUpW{
+    margin: 0;
+}
+.Name{
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1vh;
+}
+.FirstName{
+    padding: 3px;
+    width: 31vh;
+    padding: 10px 10px;
+    border-radius: 5px;
+    padding-left: 10px;
+    margin-left: 2.5vh;
+    background-color: rgba(174, 174, 174, 0.121);
+    border: 1px solid rgba(174, 174, 174, 0.607);
+}
+.Surname{
+    padding: 10px 10px;
+    border-radius: 5px;
+    margin: 5px;
+    width: 31vh;
+    margin-left: 2vh;
+    background-color: rgba(174, 174, 174, 0.121);
+    border: 1px solid rgba(174, 174, 174, 0.607);
+}
+.ReEmail{
+    padding: 3px;
+    width: 65vh;
+    padding: 10px 10px;
+    border-radius: 5px;
+    padding-left: 10px;
+    margin-left: 2.5vh;
+    background-color: rgba(174, 174, 174, 0.121);
+    margin-bottom: 1vh;
+    border: 1px solid rgba(174, 174, 174, 0.607);
+}
+.Password{
+    padding: 3px;
+    width: 65vh;
+    padding: 10px 10px;
+    border-radius: 5px;
+    padding-left: 10px;
+    margin-left: 2.5vh;
+    margin-top: 1vh;
+    background-color: rgba(174, 174, 174, 0.121);
+    border: 1px solid rgba(174, 174, 174, 0.607);
+}
+.BirthTag{
+    font-size: 14px;
+    padding-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 2px;
+}
+.BirthSelection{
+    align-items: center;
+    justify-content: center;
+}
+.day{
+    padding: 3px;
+    width: 20vh;
+    padding: 10px 10px;
+    border-radius: 5px;
+    padding-left: 10px;
+    margin-left: 2.5vh;
+    background-color: rgba(174, 174, 174, 0.121);
+    border: 1px solid rgba(174, 174, 174, 0.607);
+}
+.month{
+    padding: 3px;
+    width: 20vh;
+    padding: 10px 10px;
+    border-radius: 5px;
+    padding-left: 10px;
+    margin-left: 1.8vh;
+    background-color: rgba(174, 174, 174, 0.121);
+    border: 1px solid rgba(174, 174, 174, 0.607);   
+}
+.year{
+    padding: 3px;
+    width: 20vh;
+    padding: 10px 10px;
+    border-radius: 5px;
+    padding-left: 10px;
+    margin-left: 1.8vh;
+    background-color: rgba(174, 174, 174, 0.121);
+    border: 1px solid rgba(174, 174, 174, 0.607);
+}
+.Gender{
+    font-size: 14px;
+    padding-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 2px;
+}
+.MaleBox{
+    border: 1px solid white;
+    padding: 10px;
+    display: inline-block;
+    margin-right: 1.5vh;
+    border-radius: 5px;
+    background-color: rgba(174, 174, 174, 0.121);
+    border: 1px solid rgba(174, 174, 174, 0.607);
+}
+.FemaleBox{
+    border: 1px solid white;
+    padding: 10px 10px;
+    display: inline-block;
+    margin-right: 1.5vh;
+    border-radius: 5px;
+    margin-left: 2.5vh;
+    background-color: rgba(174, 174, 174, 0.121);
+    border: 1px solid rgba(174, 174, 174, 0.607);
+}
+.CustomBox{
+    border: 1px solid white;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 5px;
+    background-color: rgba(174, 174, 174, 0.121);
+    border: 1px solid rgba(174, 174, 174, 0.607);
+}
+.Male{
+    padding-right: 6.5vh;
+}
+.Female{
+    padding-right: 3vh;
+}
+.Custom{
+    padding-right: 2.5vh;
+}
+.No1P{
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+    text-align: left;
+    justify-content: left;
+    margin-left: 2.5vh;
+    margin-right: 2.5vh;
+    color: grey;
+}
+.No2P{
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+    text-align: left;
+    justify-content: left;
+    margin-left: 2.5vh;
+    margin-right: 2.5vh;
+    margin-bottom: 0;
+    color: grey;
+}
+.SignupButton{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(17, 159, 4);
+    height: 6.5vh;
+    width: 32vh;
+    font-size: 18px;
+    font-weight: 30px;
+    color: white;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-left: 18vh;
+    margin-top: 5vh;
+}
+}
+@media screen and (max-width: 912px){
+ 
+    body{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .SignW{
+        font-size: 6vh;
+        margin-left: 2.5vh;
+    }
+    .QuickW{
+        font-size: 3vh;
+        margin-left: 2.5vh;
+        color: grey;
+        margin-bottom: 0;
+    }
+    .newform{
+        width: 60vh;
+        height: 95vh;
+        margin: 0px;
+        border-radius: 10px;
+        background-color: white;
+        padding-bottom: 30px;   
+        border: 1px solid grey;
+    }
+    hr{
+        border: 0.1px solid rgba(174, 174, 174, 0.265);;
+        width: 70vh;
+    }
+    .SignUpW{
+        margin: 0;
+    }
+    .Name{
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1vh;
+    }
+    .FirstName{
+        padding: 3px;
+        width: 31vh;
+        padding: 10px 10px;
+        border-radius: 5px;
+        padding-left: 10px;
+        margin-left: 2.5vh;
+        background-color: rgba(174, 174, 174, 0.121);
+        border: 1px solid rgba(174, 174, 174, 0.607);
+    }
+    .Surname{
+        padding: 10px 10px;
+        border-radius: 5px;
+        margin: 5px;
+        width: 31vh;
+        margin-left: 2.5vh;
+        margin-top: 1vh;
+        background-color: rgba(174, 174, 174, 0.121);
+        border: 1px solid rgba(174, 174, 174, 0.607);
+    }
+    .ReEmail{
+        padding: 3px;
+        width: 55vh;
+        padding: 10px 10px;
+        border-radius: 5px;
+        padding-left: 10px;
+        margin-left: 2.5vh;
+        background-color: rgba(174, 174, 174, 0.121);
+        border: 1px solid rgba(174, 174, 174, 0.607);
+    }
+    .Password{
+        padding: 3px;
+        width: 55vh;
+        padding: 10px 10px;
+        border-radius: 5px;
+        padding-left: 10px;
+        margin-left: 2.5vh;
+        background-color: rgba(174, 174, 174, 0.121);
+        border: 1px solid rgba(174, 174, 174, 0.607);
+        margin-bottom: 1vh;
+    }
+    .BirthTag{
+        font-size: 17px;
+        padding-left: 2.5vh;
+        margin-top: 10px;
+        margin-bottom: 2px;
+    }
+    .BirthSelection{
+        align-items: center;
+        justify-content: center;
+    }
+    .day{
+        padding: 3px;
+        width: 20vh;
+        padding: 10px 10px;
+        border-radius: 5px;
+        padding-left: 10px;
+        margin-left: 2.5vh;
+        background-color: rgba(174, 174, 174, 0.121);
+        border: 1px solid rgba(174, 174, 174, 0.607);
+    }
+    .month{
+        padding: 3px;
+        width: 20vh;
+        padding: 10px 10px;
+        border-radius: 5px;
+        padding-left: 10px;
+        margin-left: 1.8vh;
+        background-color: rgba(174, 174, 174, 0.121);
+        border: 1px solid rgba(174, 174, 174, 0.607);   
+    }
+    .year{
+        padding: 3px;
+        width: 20vh;
+        padding: 10px 10px;
+        border-radius: 5px;
+        padding-left: 10px;
+        margin-left: 2.5vh;
+        margin-top: 1vh;
+        background-color: rgba(174, 174, 174, 0.121);
+        border: 1px solid rgba(174, 174, 174, 0.607);
+        margin-bottom: 1vh;
+    }
+    .Gender{
+        font-size: 17px;
+        margin-top: 10px;
+        margin-left: 1vh;
+        margin-bottom: 2px;
+    }
+    .MaleBox{
+        border: 1px solid white;
+        padding: 10px;
+        display: inline-block;
+        margin-right: 1.5vh;
+        border-radius: 5px;
+        background-color: rgba(174, 174, 174, 0.121);
+        border: 1px solid rgba(174, 174, 174, 0.607);
+    }
+    .FemaleBox{
+        border: 1px solid white;
+        padding: 10px 10px;
+        display: inline-block;
+        margin-right: 1.5vh;
+        border-radius: 5px;
+        margin-left: 2.5vh;
+        background-color: rgba(174, 174, 174, 0.121);
+        border: 1px solid rgba(174, 174, 174, 0.607);
+    }
+    .CustomBox{
+        border: 1px solid white;
+        padding: 10px;
+        display: inline-block;
+        border-radius: 5px;
+        background-color: rgba(174, 174, 174, 0.121);
+        border: 1px solid rgba(174, 174, 174, 0.607);
+    }
+    .Male{
+        padding-right: 6.5vh;
+    }
+    .Female{
+        padding-right: 3vh;
+    }
+    .Custom{
+        padding-right: 2.5vh;
+    }
+    .No1P{
+        display: flex;
+        align-items: center;
+        font-size: 10px;
+        text-align: left;
+        justify-content: left;
+        margin-left: 2.5vh;
+        margin-right: 2.5vh;
+        color: grey;
+    }
+    .No2P{
+        display: flex;
+        align-items: center;
+        font-size: 10px;
+        text-align: left;
+        justify-content: left;
+        margin-left: 2.5vh;
+        margin-right: 2.5vh;
+        margin-bottom: 0;
+        color: grey;
+    }
+    .SignupButton{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(17, 159, 4);
+        height: 6.5vh;
+        width: 32vh;
+        font-size: 22px;
+        font-weight: 30px;
+        color: white;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+        margin-left: 14vh;
+        margin-top: 5vh;
+    }
+}
+@media screen and (max-width: 420px){
+ 
+    body{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .SignW{
+        font-size: 4vh;
+        margin-left: 2.5vh;
+    }
+    .QuickW{
+        font-size: 3vh;
+        margin-left: 2.5vh;
+        color: grey;
+        margin-bottom: 0;
+    }
+    .newform{
+        width: 42svh;
+        height: 108vh;
+        margin: 0px;
+        border-radius: 10px;
+        background-color: white;
+        padding-bottom: 30px;   
+        border: 1px solid grey;
+    }
+    hr{
+        border: 0.1px solid rgba(174, 174, 174, 0.265);;
+        width: 47vh;
+    }
+    .SignUpW{
+        margin: 0;
+    }
+    .Name{
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1vh;
+    }
+    .FirstName{
+        padding: 3px;
+        width: 31vh;
+        padding: 10px 10px;
+        border-radius: 5px;
+        padding-left: 10px;
+        margin-left: 2.5vh;
+        background-color: rgba(174, 174, 174, 0.121);
+        border: 1px solid rgba(174, 174, 174, 0.607);
+        margin-bottom: 0.5vh;
+    }
+    .Surname{
+        padding: 10px 10px;
+        border-radius: 5px;
+        width: 31vh;
+        margin-left: 2.5vh;
+        background-color: rgba(174, 174, 174, 0.121);
+        border: 1px solid rgba(174, 174, 174, 0.607);
+    }
+    .ReEmail{
+        padding: 3px;
+        width: 37vh;
+        padding: 10px 10px;
+        border-radius: 5px;
+        padding-left: 10px;
+        margin-left: 2.5vh;
+        background-color: rgba(174, 174, 174, 0.121);
+        margin-bottom: 0.5vh;
+        border: 1px solid rgba(174, 174, 174, 0.607);
+    }
+    .Password{
+        padding: 3px;
+        width: 37vh;
+        padding: 10px 10px;
+        border-radius: 5px;
+        padding-left: 10px;
+        margin-left: 2.5vh;
+        margin-top: 1vh;
+        background-color: rgba(174, 174, 174, 0.121);
+        border: 1px solid rgba(174, 174, 174, 0.607);
+    }
+    .BirthTag{
+        font-size: 14px;
+        padding-left: 15px;
+        margin-top: 10px;
+        margin-bottom: 2px;
+    }
+    .BirthSelection{
+        align-items: center;
+        justify-content: center;
+    }
+    .day{
+        padding: 3px;
+        width: 20vh;
+        padding: 10px 10px;
+        border-radius: 5px;
+        padding-left: 10px;
+        margin-left: 2.5vh;
+        background-color: rgba(174, 174, 174, 0.121);
+        border: 1px solid rgba(174, 174, 174, 0.607);
+    }
+    .month{
+        padding: 3px;
+        width: 20vh;
+        padding: 10px 10px;
+        border-radius: 5px;
+        padding-left: 10px;
+        margin-left: 2.5vh;
+        margin-top: 1vh;
+        background-color: rgba(174, 174, 174, 0.121);
+        border: 1px solid rgba(174, 174, 174, 0.607);   
+    }
+    .year{
+        padding: 3px;
+        width: 20vh;
+        padding: 10px 10px;
+        border-radius: 5px;
+        padding-left: 10px;
+        margin-left: 2.5vh;
+        margin-top: 1vh;
+        background-color: rgba(174, 174, 174, 0.121);
+        border: 1px solid rgba(174, 174, 174, 0.607);
+    }
+    .Gender{
+        font-size: 14px;
+        padding-left: 15px;
+        margin-top: 10px;
+        margin-bottom: 2px;
+    }
+    .MaleBox{
+        border: 1px solid white;
+        padding: 10px;
+        display: inline-block;
+        margin-right: 1.5vh;
+        margin-left: 2.5vh;
+        border-radius: 5px;
+        margin-top: 1vh;
+        background-color: rgba(174, 174, 174, 0.121);
+        border: 1px solid rgba(174, 174, 174, 0.607);
+    }
+    .FemaleBox{
+        border: 1px solid white;
+        padding: 10px 10px;
+        display: inline-block;
+        border-radius: 5px;
+        margin-left: 2.5vh;
+        background-color: rgba(174, 174, 174, 0.121);
+        border: 1px solid rgba(174, 174, 174, 0.607);
+    }
+    .CustomBox{
+        border: 1px solid white;
+        padding: 10px;
+        display: inline-block;
+        border-radius: 5px;
+        background-color: rgba(174, 174, 174, 0.121);
+        border: 1px solid rgba(174, 174, 174, 0.607);
+        margin-left: 2.5vh;
+        margin-top: 1vh;
+    }
+    .Male{
+        padding-right: 8vh;
+    }
+    .Female{
+        padding-right: 5vh;
+    }
+    .Custom{
+        padding-right: vh;
+    }
+    .No1P{
+        display: flex;
+        align-items: center;
+        font-size: 7px;
+        text-align: left;
+        justify-content: left;
+        margin-left: 2.5vh;
+        margin-right: 2.5vh;
+        color: grey;
+    }
+    .No2P{
+        display: flex;
+        align-items: center;
+        font-size: 7px;
+        text-align: left;
+        justify-content: left;
+        margin-left: 2.5vh;
+        margin-right: 2.5vh;
+        margin-bottom: 0;
+        color: grey;
+    }
+    .SignupButton{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(17, 159, 4);
+        height: 6.5vh;
+        width: 32vh;
+        font-size: 18px;
+        font-weight: 30px;
+        color: white;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+        margin-left: 4.5vh;
+        margin-top: -1vh;
+    }
+}
